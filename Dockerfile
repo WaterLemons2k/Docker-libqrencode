@@ -1,4 +1,5 @@
 FROM alpine:3.1 AS qrencode
+LABEL maintainer="waterlemons2k <docker@waterlemons2k.com>"
 RUN apk -U add libqrencode &&\
     rm -rf /var/cache/* &&\
     mkdir -p qrencode/lib &&\
